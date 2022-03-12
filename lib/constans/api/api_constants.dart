@@ -43,7 +43,7 @@ extension ApiUrlsExtension on ApiEnums {
         return {
           "accept": "*/*",
           "Authorization": "Bearer $token",
-          "Content-Type": "applicatin/json",
+          "Content-Type": "application/json",
         };
       case ApiEnums.postBlogGetBlogs:
         return {
@@ -61,7 +61,7 @@ extension ApiUrlsExtension on ApiEnums {
         return {
           "accept": "*/*",
           "Authorization": "Bearer $token",
-          "Content-Type": "applicatin/json",
+          "Content-Type": "application/json",
         };
       case ApiEnums.postGenUpLoadImg:
         return {
@@ -72,14 +72,12 @@ extension ApiUrlsExtension on ApiEnums {
       case ApiEnums.postSignIn:
         return {
           "accept": "*/*",
-          "Authorization": "Bearer $token",
-          "Content-Type": "applicatin/json",
+          "Content-Type": "application/json",
         };
       case ApiEnums.postSignUp:
         return {
           "accept": "*/*",
-          "Authorization": "Bearer $token",
-          "Content-Type": "applicatin/json",
+          "Content-Type": "application/json",
         };
     }
   }
