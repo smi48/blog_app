@@ -31,14 +31,16 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.3.1
+  http: ^0.13.4
+  provider: ^6.0.2
+  shared_preferences: ^2.0.13
+  google_maps_place_picker_mb: ^2.0.0-mb.15
+  cached_network_image: ^3.2.0
+  image_picker: ^0.8.4+11
+  flutter_widget_from_html: ^0.8.5
+  
 
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter

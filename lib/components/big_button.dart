@@ -5,29 +5,30 @@ import '../constans/styles/colors_const.dart';
 
 enum ButtonStyleEnum { dark, light }
 
-Container buildBigButton({
+GestureDetector buildBigButton({
   required double screenHeight,
   required IconData icon,
   required String title,
   required ButtonStyleEnum style,
-  required Function onPressed,
+  required onPressed,
 }) {
-  return Container(
-    margin: EdgeInsets.only(top: screenHeight * 16 / 844),
-    decoration: BoxDecoration(
-        color: style == ButtonStyleEnum.dark
-            ? BlogAppColors.iconActive
-            : BlogAppColors.scaffoldBg,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all()),
-    height: screenHeight * 56 / 844,
-    child: GestureDetector(
-      onTap: () {},
+  return GestureDetector(
+    onTap: onPressed,
+    child: Container(
+      margin: EdgeInsets.only(top: screenHeight * 16 / 844),
+      decoration: BoxDecoration(
+          color: style == ButtonStyleEnum.dark
+              ? BlogAppColors.iconActive
+              : BlogAppColors.scaffoldBg,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all()),
+      height: screenHeight * 56 / 844,
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.only(left: 16.0),
             child: Icon(
               icon,
               size: 25,

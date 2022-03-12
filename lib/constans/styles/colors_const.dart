@@ -7,4 +7,6 @@ class BlogAppColors {
   static const scaffoldBg = Color(0xFFFAFAFA);
   static const iconActive = Color(0xFF292F3B);
   static const iconPassive = Color(0xFFC4C9D2);
+  static const errorColor = Colors.red;
+  static const successColors = Colors.green;
 }
